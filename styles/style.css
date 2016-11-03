@@ -2,16 +2,24 @@ html {
 	font-size: 62.5%;
 }
 
+body {
+	background-color: #4c99e6;
+}
+
+body * {
+	border-radius: 2px;
+}
+
 /* Logo */
 header {
 	margin-top: 50px;
-	width: 400px;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 img.logo {
+	display: block;
 	height: 75px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /* Sign up box */
@@ -19,6 +27,7 @@ main {
 	width: 400px;
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 30px;
 	font-size: 16px;
 	font-size: 1.6rem;
 }
@@ -27,19 +36,30 @@ main * {
 	display: block;
 }
 
-main section {
-	padding: 40px;
+main div {
+	
 	text-align: center;
 }
 
+main div.signup {
+	padding: 40px;
+	background-color: #fff;
+}
 
-main section form fieldset {
+main h2 {
+	margin-top: 0;
+	font-size: 30px;
+	font-size: 3.5rem;
+	font-weight: normal;
+}
+
+main .signup form fieldset {
 	border: none;
 	margin: 0;
 	padding: 0;
 }
 
-main section form fieldset label {
+main .signup form fieldset label {
 	text-align: left;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -50,7 +70,6 @@ input, button {
 	height: 55px;
 	border: 2px #eee solid;
 	padding: 15px;
-	margin
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -61,4 +80,33 @@ input {
 
 button {
 	margin-top: 20px;
+	background-color: #2eb82e;
+	border: 0;
+	color: #fff;
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+button:hover {
+	background-color: #196619;
+}
+
+.forgotpassword a {
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #aaa;
+}
+
+.login {
+	color: #fff;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.login *{
+	display: inline;
+}
+
+.login a {
+	color: #fff;
 }
