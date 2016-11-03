@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AnalogSea Sign Up</title>
+	<meta name="descripion" content="Sign-up for AnalogSea">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<header>
+		<h1>AnalogSea</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Sign up</h2>
+			<form action="/signup" method='post'>
+				<fieldset name="sign-up-info">
+					<label for="email" required>Email</label>
+					<input type="email" placeholder="foo@bar.com" required>
+					<label for="password" required>Password</label>
+					<input type="password" placeholder="1234password" required>
+				</fieldset>	
+				<button type="submit">Sign up</button>
+				<p class="forgotpassword"><a href="/forgot-password/new">Forgot password?</a></p>
+		</form>
+		</section>
+		<section>
+			<p>Already have an account? <a href="/login">Log in</a></p>
+		</section>
+
+	</main>
+</body>
+</html>
